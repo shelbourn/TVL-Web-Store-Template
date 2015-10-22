@@ -1,0 +1,64 @@
+%%Panel.HTMLHead%%
+<script type="text/javascript" src="%%GLOBAL_CdnAppPath%%/javascript/jquery/plugins/jCarousel/jCarousel.js?%%GLOBAL_JSCacheToken%%"></script>
+<body>
+<div id="Container">
+	%%Panel.Header%%
+	<h1 class="title">%%LNG_ThanksForYourOrder%%%%GLOBAL_CustomerName%%</h1>
+	<div id="Wrapper">
+		%%Panel.WrapperBanner%%
+		<div class="Left NewProducts" id="LayoutColumn1">
+			%%Panel.SideNewProducts%%
+		</div>
+		<div class="Content Wide" id="LayoutColumn2">
+			<div class="Block">
+				<div class="BlockContent">
+					<p class="ErrorMessage Message" style="display:%%GLOBAL_HideError%%">
+						%%GLOBAL_ErrorMessage%%
+					</p>
+
+					<div style="display:%%GLOBAL_HidePaidOrderConfirmation%%">
+						<div class="NotifyMessage">
+							<p class="order-number"><span>%%LNG_YourOrderNumber%%</span> <a href="%%GLOBAL_ShopPath%%/account.php?action=view_order&order_id=%%GLOBAL_OrderId%%" id="order-number">%%GLOBAL_OrderId%%</a></p>
+
+							<p style="display:%%GLOBAL_HidePhysicalOrderConfirmation%%">
+								%%GLOBAL_PhysicalOrderConfirmation%%
+							</p>
+
+							<p style="display:%%GLOBAL_HideDigitalOrderConfirmation%%">
+								%%GLOBAL_DigitalOrderConfirmation%%
+							</p>
+							<p style="display:%%GLOBAL_HideDigitalOrderDownloadLink%%">
+								<br />
+								<a href="%%GLOBAL_ViewFullOrderPath%%">%%LNG_DownloadTheItemsYouOrdered%%</a>
+							</p>
+						</div>
+					</div>
+
+					<div style="display: %%GLOBAL_HideAwaitingPayment%%">
+						<div class="NotifyMessage">
+							<p class="order-number">
+								<span>%%LNG_YourOrderNumber%%</span>
+								<a href="%%GLOBAL_ShopPath%%/account.php?action=view_order&order_id=%%GLOBAL_OrderId%%" id="order-number-awaiting-payment">%%GLOBAL_OrderId%%</a>
+							</p>
+							<p>%%LNG_JustSentAnEmailConfirmation%%</p>
+							<p>%%LNG_OrderAwaitingPayment%%</p>
+						</div>
+					</div>
+					%%GLOBAL_OrderConfirmationDetails%%
+					%%SNIPPET_OfflinePaymentMessage%%
+				</div>
+			</div>
+			%%Panel.ShareProductById%%
+			<div style="clear:both;">
+				<br /><hr />
+				<p><a href="%%GLOBAL_ShopPath%%">%%GLOBAL_ContinueShoppingOnStoreName%%</a></p>
+			</div>
+		</div>
+		<br class="Clear" />
+	</div>
+	%%Panel.Footer%%
+	<!-- Include the conversion tracking code for all analytics packages -->
+	%%GLOBAL_ConversionCode%%
+</div>
+</body>
+</html>

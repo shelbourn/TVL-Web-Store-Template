@@ -1,0 +1,277 @@
+/**
+ *   Bigcommerce ClassicWhite
+ *   Style Initialisation
+ */
+
+// @Section-Store Header
+#Logo h1 a{
+color:@color-store-name;
+}
+
+#HeaderLower {
+border-top-color: @color-menu-text;
+}
+
+#SideCategoryList li a, #SideCategoryList .sf-menu li a{
+color:@color-menu-text;
+}
+
+#SideCategoryList li a:hover,
+#SideCategoryList .sf-menu li a:hover{
+border-bottom-color:@color-menu-text;
+}
+
+#SideCategoryList li ul, 
+#SideCategoryList .sf-menu li ul{
+background-color:@color-dropdown-menu;
+}
+
+#SideCategoryList li ul:before, 
+#SideCategoryList .sf-menu li ul:before{
+border-bottom-color:@color-dropdown-menu;
+}
+
+#SideCategoryList li li, 
+#SideCategoryList .sf-menu li li{
+border-bottom-color: darken(@color-dropdown-menu, 5%)
+}
+
+#Header{
+background-color:@color-header-background;
+}
+
+#Header #HeaderLower{
+background-color:@color-header-background;
+}
+
+#TopMenu li a {
+color: darken(@color-header-background, 40%);
+}
+
+#TopMenu li  {
+color: darken(@color-header-background, 25%);
+}
+
+#TopMenu li div{
+color: darken(@color-header-background, 25%);
+}
+
+// @Section-Store Footer
+
+#FooterUpper {
+border-top-color:@color-section-heading;
+}
+
+#FooterUpper h2{
+color:@color-section-heading;
+}
+
+#Footer #Menu li a{
+color:@color-section-heading;
+border-left:1px solid @color-section-heading;
+}
+
+#FooterUpper a{
+color:@color-links;
+}
+
+#FooterUpper .RecentNews li p{
+color:@color-links;
+}
+
+#Footer {
+border-bottom-color: @color-links;
+}
+
+#Footer p{
+color:@color-links;
+}
+
+#Footer a{
+color:@color-links;
+}
+
+#Footer #Menu ul {
+    border-bottom-color: darken(@color-footer-background, 25%)
+}
+
+#ContainerFooter{
+background-color:@color-footer-background;
+}
+
+.NewsletterSubscription label{
+color:darken(@color-footer-background, 60%);
+}
+
+#socnet{
+color:darken(@color-footer-background, 60%);
+}
+// @Section-Home Page
+
+
+.FeaturedProducts h2{
+color:@color-section-headings;
+}
+
+#HomeFeaturedProducts .ProductList .ProductDetails a{
+color:@color-product-names;
+}
+
+#HomeFeaturedProducts .ProductPrice,#HomeFeaturedProducts .ProductList em{
+color:@color-product-prices;
+}
+
+#HomeFeaturedProducts  .ProductActionAdd a {
+background-color:@color-button !important;
+}
+
+
+// @Section-Product Page
+
+.PrimaryProductDetails h1{
+color:@color-product-name;
+}
+
+.ProductList .ProductDetails a{
+color:@color-product-name;
+}
+
+.ProductDetailsGrid .DetailRow.PriceRow .Value em{
+color:@color-product-price;
+}
+
+.ProductList .ProductPriceRating em{
+color:@color-product-price;
+}
+
+.ProductDetailsGrid .Label{
+color:@color-product-description;
+}
+
+.ProductDetailsGrid .Value{
+color:@color-product-description;
+}
+
+.DetailRow .Value a{
+color:@color-product-description;
+}
+
+.productAttributeList .productAttributeRow{
+color:@color-product-description;
+}
+
+.prodAccordionContent{
+color:@color-product-description;
+}
+
+#ModalContent a, .ModalContent a{
+color:@color-product-description !important;
+}
+
+#ModalContent, .ModalContent{
+color:@color-product-description !important;
+}
+
+#prodAccordion .Block.current h2, div.ExpressCheckout 
+.ExpressCheckoutBlock:not(.ExpressCheckoutBlockCollapsed) h3{
+color:@color-product-description-headings;
+}
+
+#prodAccordion .Block h2, div.ExpressCheckout h3{
+color:@color-product-description-headings;
+}
+
+.AddToWishlistLink .wishlist-button{
+color:@color-add-to-wishlist-button;
+}
+
+.Field45.quantityInput{
+color:@color-product-description;
+}
+
+.Content h3{
+color:@color-product-description-headings;
+}
+
+ .Submit input, .ProductList li .ProductActionAdd a,
+ .QuickViewBtn, #bottom_payment_button, 
+.ExpressCheckoutContent input[type="submit"], .btn{
+background-color:@color-product-list-buttons !important;
+}
+
+// @Section-Category page
+
+
+h1.title{
+color:@color-category-title;
+}
+
+#CategoryContent .ProductList .ProductDetails a{
+color:@color-category-product-name;
+}
+
+
+#CategoryContent .ProductList .ProductPriceRating em,
+#CategoryContent .ProductList .ProductPrice {
+color:@color-category-product-price;
+}
+
+#CategoryContent  .ProductActionAdd a{
+background-color:@color-category-list-buttons !important;
+}
+
+//Background & Fonts
+
+body{
+background-color:@color-page-background;
+}
+
+.ProductList .ProductDetails{
+font-family:@font-page-text;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+font-family: @font-heading-text;
+}
+
+/* --- Faceted Search --- */
+
+.facet-container {
+    border-top: 1px solid @color-border;
+
+    [class^="js-facet-clear"] {
+        color: lighten(@color-page-text, 40%);
+
+        &:hover {
+            color: lighten(@color-page-text, 20%);
+        }
+    }
+
+    .btn-facet-more-options.more {
+        color: @color-page-text;
+
+        &:hover {
+            color: @color-links;
+        }
+    }
+
+    .facet-option:hover {
+        background: @color-border;
+    }
+
+    .facet-option .facet-option-product-count {
+        color: lighten(@color-page-text, 40%);
+    }
+}
+
+.js-faceted-search-container {
+    
+    .btn {
+        background-color:@color-category-list-buttons !important;
+        border-color:darken(@color-category-list-buttons, 5%); 
+    }
+
+    > [class^='js-facet-']:last-of-type .facet-container {
+        border-bottom: 1px solid @color-border;
+    }
+}
